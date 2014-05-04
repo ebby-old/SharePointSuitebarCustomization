@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Control Id="SuiteLinksDelegate"
+           Sequence="90"
+           ControlSrc="~/_ControlTemplates/15/SharePointSuitebarCustomization/SuiteLinksControl.ascx">
+  </Control>
+</Elements>

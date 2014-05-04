@@ -45,16 +45,52 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Microsoft.SharePoint" />
     <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\Utilities.cs" />
+    <Compile Include="ControlTemplates\SharePointSuitebarCustomization\SuiteBrandingControl.ascx.cs">
+      <DependentUpon>SuiteBrandingControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\SharePointSuitebarCustomization\SuiteBrandingControl.ascx.designer.cs">
+      <DependentUpon>SuiteBrandingControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ControlTemplates\SharePointSuitebarCustomization\SuiteLinksControl.ascx.cs">
+      <DependentUpon>SuiteLinksControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ControlTemplates\SharePointSuitebarCustomization\SuiteLinksControl.ascx.designer.cs">
+      <DependentUpon>SuiteLinksControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SuiteLinkItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ControlTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ae01a499-d6cf-48ef-999a-631f52874b3f}</SharePointProjectItemId>
+    </None>
+    <None Include="Delegates\SuiteBrandingControl\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7a79b8d1-e21c-4266-98a4-f5316a28bec6}</SharePointProjectItemId>
+    </None>
+    <None Include="Delegates\SuiteLinksControl\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e126e3b4-0b90-4de2-9021-56f0bb83c547}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Suitebar Customizations\Suitebar Customizations.feature">
+      <FeatureId>{ca897f96-5757-4344-ba00-6eaee24e1f70}</FeatureId>
+    </None>
     <None Include="key.snk" />
+    <None Include="Lists\SuiteLinks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dd1c9eab-3e27-4fdf-9fdf-66532e97ab85}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SuiteLinks\SuiteLinksInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{28857685-0c5e-4f90-a755-2d06e9b05cf1}</SharePointProjectItemId>
+    </None>
     <None Include="Package\Package.package">
       <PackageId>{6f20bec1-1f60-472b-865f-f14b8b00d1e4}</PackageId>
     </None>
@@ -62,8 +98,18 @@
       <DependentUpon>Package.package</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Features\" />
+    <Content Include="ControlTemplates\SharePointSuitebarCustomization\SuiteBrandingControl.ascx" />
+    <Content Include="ControlTemplates\SharePointSuitebarCustomization\SuiteLinksControl.ascx" />
+    <Content Include="Delegates\SuiteBrandingControl\Elements.xml" />
+    <Content Include="Delegates\SuiteLinksControl\Elements.xml" />
+    <Content Include="Features\Suitebar Customizations\Suitebar Customizations.Template.xml">
+      <DependentUpon>Suitebar Customizations.feature</DependentUpon>
+    </Content>
+    <Content Include="Lists\SuiteLinks\Elements.xml" />
+    <Content Include="Lists\SuiteLinks\Schema.xml" />
+    <Content Include="Lists\SuiteLinks\SuiteLinksInstance\Elements.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

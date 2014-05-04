@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package dslVersion="1.0.0.0" 
-        Id="6f20bec1-1f60-472b-865f-f14b8b00d1e4" 
-        solutionId="6f20bec1-1f60-472b-865f-f14b8b00d1e4" 
-        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
-        name="SharePointSuitebarCustomization"
-        sharePointProductVersion="15.0">
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="6f20bec1-1f60-472b-865f-f14b8b00d1e4" solutionId="6f20bec1-1f60-472b-865f-f14b8b00d1e4" resetWebServer="false" sharePointProductVersion="15.0" name="SharePointSuitebarCustomization" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="ca897f96-5757-4344-ba00-6eaee24e1f70" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="ae01a499-d6cf-48ef-999a-631f52874b3f" />
+  </projectItems>
 </package>
