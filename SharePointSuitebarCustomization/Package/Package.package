@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="6f20bec1-1f60-472b-865f-f14b8b00d1e4" 
+        solutionId="6f20bec1-1f60-472b-865f-f14b8b00d1e4" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="SharePointSuitebarCustomization"
+        sharePointProductVersion="15.0">
+</package>
